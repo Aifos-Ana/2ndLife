@@ -1,0 +1,239 @@
+/* Default styles for .profile-container */
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Styles for .profile */
+.profile {
+    flex: 1 1 300px;
+    max-width: 300px;
+    padding: 20px;
+    margin: 0.5em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: min-content;
+}
+
+.profile img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile h2 {
+    margin: 0;
+}
+
+.profile .details {
+    text-align: left;
+}
+
+.profile .info-label {
+    font-weight: bold;
+    margin: 10px;
+}
+
+.profile p {
+    margin: 5px 0;
+}
+
+button.edit-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.edit-button:hover {
+    background-color: #616161;
+}
+
+.save-button {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* CSS for the profile form */
+#profileForm {
+    margin-top: 20px;
+}
+
+#profileForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#profileForm input[type="text"],
+#profileForm input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 4px 0px rgb(168 168 168 / 60%) inset;
+}
+
+#profileForm button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    width: 100%;
+}
+
+#profileForm button[type="submit"]:hover {
+    background-color: #616161;
+}
+
+/* Styles for selling items */
+.selling-items {
+    flex: 1 1 600px;
+    max-width: 100%;
+    margin: 0.5em;
+    position: relative;
+}
+
+.selling-items h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.selling-items ul {
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+        margin: 0;
+        /* Remove default margin */
+}
+
+.selling-items ul article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    /* Adjust max-width to your preference */
+}
+
+.selling-items ul article img {
+    display: block;
+    width: 100%;
+    max-height: 150px;
+    /* Ensure a maximum height */
+    object-fit:contain;
+    /* Maintain aspect ratio */
+    margin: 0 auto;
+    /* Center the image horizontally */
+    margin-bottom: 10px;
+}
+
+article a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+.no-items-message {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 70%;
+}
+
+.no-items-message p {
+    margin: 0;
+}
+
+.add-item-button-container {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.add-item-button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-item-button-container button:hover {
+    background-color: #616161;
+}
+
+.delete-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 80%;
+}
+
+.delete-button:hover {
+    background-color: #616161;
+}
+
+.delete_bttn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile {
+        margin-bottom: 20px;
+    }
+
+    .selling-items ul article {
+        max-width: 100%;
+    }
+}

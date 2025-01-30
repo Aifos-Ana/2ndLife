@@ -1,0 +1,61 @@
+/* Style for container */
+main{
+.container {
+    width: 65%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+/* Style for heading */
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+
+/* Disable text area resizing */
+textarea {
+    resize: none;
+}
+
+form{
+    width: 80%;
+}
+
+/* Style for form inputs */
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for submit button */
+.form-btn{
+    margin-top:20px;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 70%;
+}
+
+/* Hover effect for submit button */
+.btn-primary:hover {
+    background-color: #616161;
+}
+}

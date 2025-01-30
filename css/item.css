@@ -1,0 +1,125 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the item section */
+#item {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the item details */
+.item-details {
+    flex: 1;
+    /* Take up remaining space */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 1px;
+}
+
+/* Style the item details heading */
+.item-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Style the item details paragraphs */
+.item-details p {
+    margin-bottom: 10px;
+}
+
+/* Style the item image */
+.item-details img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    /* Center horizontally */
+    display: block;
+    /* Ensure image is treated as a block element */
+}
+
+/* Style the item status */
+.item-details p strong:last-child {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Style the add to cart button */
+.item-details button {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.item-details button:hover {
+    background-color: #616161;
+}
+
+/* Style the disabled add to cart button */
+.item-details button[disabled] {
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+}
+
+/* Style the seller details */
+.seller-details {
+    flex: 0 50px 80px;
+    /* Fixed width for seller details */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Style the circular image for the seller */
+.seller-details img {
+    display: block;
+    width: 100px;
+    /* Adjust size as needed */
+    height: 100px;
+    /* Adjust size as needed */
+    border-radius: 50%;
+    /* Makes the image circular */
+    margin: 0 auto 10px;
+    /* Centers the image */
+}
+
+.seller-details h3 {
+    text-align: center;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+
+    /* Make seller-details section stack above item-details */
+    .seller-details {
+        flex-basis: 100%;
+        margin-right: 0;
+        /* Remove right margin */
+        margin-bottom: 20px;
+        /* Add bottom margin to separate from item details */
+    }
+}

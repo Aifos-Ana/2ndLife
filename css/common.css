@@ -1,0 +1,119 @@
+/* Resetting default margin and padding */
+body,h1,h2,h3,p,ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-container h1{
+    margin-left: 0.5em;
+}
+
+.header-container img {
+    margin-left: 0.2em;
+    /* Adjust the margin as needed */
+    max-width: 80px;
+    /* Adjust the width of the image */
+    height: auto;
+}
+
+/* Setting up basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Set minimum height of the body to the height of the viewport */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-grow: 1;
+    /* Allow the container to grow to fill available space */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header a , footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: right;
+        width: 100%;
+        gap: 25px;
+        margin-bottom: 1px;
+}
+
+#messages-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#messages{
+    background-color: #333;
+}
+
+button,
+input[type="submit"]{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    /* Push the footer to the bottom of the page */
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .login, .logout {
+        margin-top: 10px;
+    }
+}

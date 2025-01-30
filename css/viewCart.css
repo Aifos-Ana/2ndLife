@@ -1,0 +1,121 @@
+/* Style for the Cart section */
+
+#Cart>article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#Cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#Cart ul {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#Cart ul:last-of-type {
+    border-bottom: none;
+}
+
+#Cart p {
+    margin: 0;
+}
+
+.Cart_button_container {
+    float: right;
+}
+
+.Cart_button_container button {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    width: auto;
+    /* Allow button to adjust width */
+    font-size: 14px;
+    /* Adjust font size */
+}
+
+.Cart_button_container button:hover {
+    background-color: #616161;
+}
+
+#Cart hr {
+    margin-top: 10px;
+    margin-bottom: 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+#CartContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 10000px;
+    border-radius: 5px;
+    margin-top: 20px;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+#Cart {
+    flex: 1 1 calc(50% - 20px);
+    margin-right: 20px;
+
+    max-width: fit-content;
+    /* Adjust this as needed */
+}
+
+#CartSummary {
+    flex: 1 1 calc(30% - 20px);
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: max-content;
+}
+
+#CartSummary p {
+    margin: 5px 0;
+}
+
+#CartSummary button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#CartSummary button:hover {
+    background-color: #616161;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 600px) {
+    #Cart {
+        flex: 1 1 100%;
+        /* Full width on smaller screens */
+        margin-right: 0;
+        margin-bottom: 20px;
+        /* Add space between sections */
+    }
+
+    #CartSummary {
+        flex: 1 1 100%;
+        /* Full width on smaller screens */
+    }
+}

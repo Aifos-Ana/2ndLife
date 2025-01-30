@@ -1,0 +1,86 @@
+    /* Style for the checkout container */
+    #checkoutContainer {
+        max-width: 600px;
+        margin: 0 auto;
+        /* Center the container horizontally */
+        padding: 20px;
+        text-align: center;
+        /* Center align the content inside */
+    }
+
+    /* Style for the checkout form */
+    #checkoutForm {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        /* Add more space between form and total value */
+    }
+
+    #checkoutForm label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    #checkoutForm input[type="text"] {
+        width: 90%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    #checkoutForm input[type="submit"] {
+        width: 90%;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    #checkoutForm input[type="submit"]:hover {
+        background-color: #616161;
+    }
+
+                #paymentComplete input[type="submit"] {
+                    width: 100%;
+                    padding: 10px;
+                    background-color: #333;
+                    color: white;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+        
+                #paymentComplete input[type="submit"]:hover {
+                    background-color: #616161;
+                }
+
+    #paymentComplete {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+        text-align: center;
+        display: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+        @media only screen and (max-width: 600px) {
+            #checkoutForm {
+                max-width: 90%;
+                /* Adjust the width for smaller screens */
+            }
+        }
+    

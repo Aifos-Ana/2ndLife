@@ -1,0 +1,123 @@
+/* homepage.css */
+
+/* Default styles */
+input#search {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+section#items {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(70% - 10px);
+    margin-right: 10px;
+    float: left;
+}
+
+article {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+article img {
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    /* Ensure a maximum height */
+    object-fit: cover;
+    /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+article a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+article p {
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    section#items {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+
+    article {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    article {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Additional styles for filters section */
+section#Filters {
+    width: calc(30% - 80px);
+    margin-left: 10px;
+    float: right;
+    padding-left: 4em;
+    padding-top: 10px;
+    padding-bottom: 2em;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+section#Filters h3 {
+    padding-top: 10px;
+}
+
+section#Filters button {
+    display: block;
+    width: 60%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+section#Filters button:hover {
+    background-color: #616161;
+}
+
+/* Adjust filters section on smaller screens */
+@media screen and (max-width: 768px) {
+    section#Filters {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+}
