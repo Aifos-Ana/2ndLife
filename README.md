@@ -1,10 +1,5 @@
 # 2ndLife
 
-## Group ltw00g00
-
-- Ana Sofia Pinto (up202004606) 100%
-- Daniel Novais (201909711) 0%
-
 ## Install Instructions
 
     git clone https://github.com/FEUP-LTW-2024/ltw-project-2024-ltw02g09.git
@@ -17,13 +12,13 @@
 ## Screenshots
 
 **Homepage:**
-![Homepage](https://github.com/FEUP-LTW-2024/ltw-project-2024-ltw02g09/blob/master/docs/homepage.png "Homepage")
+![Homepage](https://github.com/Aifos-Ana/2ndLife/blob/final-delivery-v1/docs/homepage.png "Homepage")
 
 **Profile page:**
-![Profile](https://github.com/FEUP-LTW-2024/ltw-project-2024-ltw02g09/blob/master/docs/profile.png "Profile")
+![Profile](https://github.com/Aifos-Ana/2ndLife/blob/final-delivery-v1/docs/profile.png "Profile")
 
 **Item page:**
-![Item](https://github.com/FEUP-LTW-2024/ltw-project-2024-ltw02g09/blob/master/docs/item.png "Item")
+![Item](https://github.com/Aifos-Ana/2ndLife/blob/final-delivery-v1/docs/item.png "Item")
 
 ## Implemented Features
 
@@ -61,21 +56,6 @@ We have been careful with the following security aspects:
 - [ ] **Cross-Site Request Forgery (CSRF)**
 
 **Password Storage Mechanism**: hash_password&verify_password
-
-**Aditional Requirements**:
-
-We also implemented the following additional requirements (you can add more):
-
-- [ ] **Rating and Review System**
-- [ ] **Promotional Features**
-- [ ] **Analytics Dashboard**
-- [ ] **Multi-Currency Support**
-- [ ] **Item Swapping**
-- [ ] **API Integration**
-- [ ] **Dynamic Promotions**
-- [ ] **User Preferences**
-- [ ] **Shipping Costs**
-- [ ] **Real-Time Messaging System**
 
 ## Credentials
 
