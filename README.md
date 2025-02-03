@@ -2,7 +2,7 @@
 
 ## Install Instructions
 
-    git clone https://github.com/FEUP-LTW-2024/ltw-project-2024-ltw02g09.git
+    git clone https://github.com/Aifos-Ana/2ndLife.git
     git checkout final-delivery-v1
     cd ./database
     sqlite foo.db < create.sql
@@ -32,28 +32,21 @@
 
 - [&check;] List new items, providing details such as category, brand, model, size, and condition, along with images.
 - [&check;] Track and manage their listed items.
-- [ ] Respond to inquiries from buyers regarding their items and add further information if needed.
-- [ ] Print shipping forms for items that have been sold.
 
 **Buyers** should be able to:
-
 - [&check;] Browse items using filters like category, price, and condition.
-- [ ] Engage with sellers to ask questions or negotiate prices.
 - [&check;] Add items to a wishlist or shopping cart.
 - [&check;] Proceed to checkout with their shopping cart (simulate payment process).
 
 **Admins** should be able to:
-
-- [ ] Elevate a user to admin status.
 - [&check;] Introduce new item categories, sizes, conditions, and other pertinent entities.
-- [ ] Oversee and ensure the smooth operation of the entire system.
+
 
 **Security**:
 We have been careful with the following security aspects:
 
 - [&check;] **SQL injection**
 - [&check;] **Cross-Site Scripting (XSS)**
-- [ ] **Cross-Site Request Forgery (CSRF)**
 
 **Password Storage Mechanism**: hash_password&verify_password
 
